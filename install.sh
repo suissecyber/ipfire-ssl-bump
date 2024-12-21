@@ -137,8 +137,7 @@ http_access allow all
 ssl_bump server-first all
 
 sslcrtd_program /usr/lib/squid/security_file_certgen -s /var/cache/squid/ssl_db -M 4MB
-sslcrtd_children 1000 startup=1 idle=1
-#sslcrtd_children 1000 startup=50 idle=20
+sslcrtd_children 1000 startup=50 idle=20
 
 #cache_dir ufs /var/cache/squid 1000 16 256
 
