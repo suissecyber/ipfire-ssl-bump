@@ -29,6 +29,7 @@ and seamless network redirection within the IPFire environment.
 ## Installation
 1. Clone the repository:
    ```bash
+   pakfire install -y git
    git clone https://github.com/suissecyber/ipfire-ssl-bump.git
    cd ipfire-ssl-bump
    ```
