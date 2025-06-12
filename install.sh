@@ -263,6 +263,11 @@ fi
 
 ### FIX FATAL ERROR
 sudo rm -rf /var/cache/squid/ssl_db/
+### GENERATE SQUID FOLDER
+mkdir -p /var/cache/squid/
+chown -R squid:squid /var/cache/squid/
+chmod -R 700 /var/cache/squid/
+
 sudo /usr/lib/squid/security_file_certgen -c -s /var/cache/squid/ssl_db -M 4MB
 
 # Start Squid
